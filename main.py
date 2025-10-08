@@ -147,7 +147,7 @@ caption = (
 )
     
 # Start command handler
-@bot.on_message(filters.command(["sameer1"]))
+@bot.on_message(filters.command(["start"]))
 async def start_command(bot: Client, message: Message):
     await bot.send_photo(chat_id=message.chat.id, photo=random_image_url, caption=caption, reply_markup=keyboard)
     
